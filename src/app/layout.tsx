@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { ParticleBackground } from "./ui";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -22,10 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${geist.className} antialiased flex flex-col h-full m-0`}
+        className={`${geist.className} antialiased flex flex-col h-full m-0 relative`}
       >
+        <ParticleBackground />
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 relative z-0">
           {children}
         </main>
         <Footer />
