@@ -13,7 +13,7 @@ const Card = ({
   hoverable = false,
   bordered = true,
 }: CardProps) => {
-  const baseStyles = 'bg-black text-white rounded-lg overflow-hidden';
+  const baseStyles = 'bg-black text-white rounded-lg overflow-hidden backdrop-blur-sm bg-opacity-80';
   const hoverStyles = hoverable ? 'transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_15px_rgba(255,0,51,0.7)]' : '';
   const borderStyles = bordered ? 'border border-red-600' : '';
 

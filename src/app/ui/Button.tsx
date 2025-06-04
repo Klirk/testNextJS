@@ -21,7 +21,7 @@ const Button = ({
   type = 'button',
   disabled = false,
 }: ButtonProps) => {
-  const baseStyles = 'rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2';
+  const baseStyles = 'rounded-md font-medium tracking-wider transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2';
   
   const variantStyles = {
     primary: 'bg-red-600 text-white hover:bg-red-700 neon-glow',

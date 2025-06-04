@@ -18,6 +18,7 @@ export default function Home() {
       {/* Hero Section */}
       <Section 
         className="bg-black/70 py-20 border-b border-red-800"
+        id="home"
       >
         <div className="flex flex-col items-center">
           <Avatar 
@@ -45,20 +46,20 @@ export default function Home() {
       </Section>
 
       {/* Skills Section */}
-      <Section title="Skills & Technologies" subtitle="Technologies I work with" className="border-b border-red-800 bg-black/60">
+      <Section 
+        title="Skills & Technologies" 
+        subtitle="Technologies I work with" 
+        className="border-b border-red-800 bg-black/60"
+        id="skills"
+      >
         <div className="flex flex-wrap gap-2 justify-center max-w-3xl mx-auto mb-12">
           <Badge variant="primary" size="lg">JavaScript</Badge>
           <Badge variant="primary" size="lg">TypeScript</Badge>
           <Badge variant="primary" size="lg">React</Badge>
           <Badge variant="primary" size="lg">Next.js</Badge>
-          <Badge variant="secondary" size="lg">Node.js</Badge>
-          <Badge variant="secondary" size="lg">Express</Badge>
           <Badge variant="info" size="lg">MongoDB</Badge>
           <Badge variant="info" size="lg">PostgreSQL</Badge>
           <Badge variant="success" size="lg">Docker</Badge>
-          <Badge variant="success" size="lg">AWS</Badge>
-          <Badge variant="warning" size="lg">Figma</Badge>
-          <Badge variant="danger" size="lg">Jest</Badge>
         </div>
       </Section>
 
@@ -67,6 +68,7 @@ export default function Home() {
         title="Projects" 
         subtitle="Some of my recent work"
         className="border-b border-red-800 bg-black/70"
+        id="projects"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Project 1 */}
@@ -136,6 +138,7 @@ export default function Home() {
         title="Get in Touch"
         subtitle="Interested in working together? Let's connect!"
         className="bg-black/60"
+        id="contact"
       >
         <div className="max-w-md mx-auto text-center">
           <Text className="mb-6">
