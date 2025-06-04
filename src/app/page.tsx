@@ -21,14 +21,14 @@ export default function Home() {
       >
         <div className="flex flex-col items-center">
           <Avatar 
-            src="/ava" // Replace with your actual photo
-            alt="Your Name"
+            src="/avatar.jpg" // Replace with your actual photo
+            alt="KLIRK"
             size="xl"
             bordered
             className="mb-8 neon-flicker"
           />
           <Text variant="h1" weight="bold" align="center" className="mb-4 neon-text">
-            Your Name
+            KLIRK
           </Text>
           <Text variant="h3" color="primary" align="center" className="mb-6">
             Full Stack Developer
