@@ -65,10 +65,12 @@ export default function Home() {
                                 Contact Me
                             </Button>
                         </a>
-                        <Button variant="outline" size="lg" className="flex items-center gap-2">
-                            <Download className="w-5 h-5"/>
-                            Download Resume
-                        </Button>
+                        <a href="/docs/resume.pdf" download className="inline-block">
+                            <Button variant="outline" size="lg" className="flex items-center gap-2">
+                                <Download className="w-5 h-5"/>
+                                Download Resume
+                            </Button>
+                        </a>
                     </div>
                 </div>
             </Section>
