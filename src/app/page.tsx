@@ -279,27 +279,27 @@ export default function Home() {
                         Feel free to reach out if you have a project in mind or just want to connect.
                     </Text>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a 
-                            href="mailto:klirk.ens@gmail.com" 
+                        <a
+                            href="mailto:klirk.ens@gmail.com"
                             className="inline-block w-full"
                         >
-                            <Button 
-                                size="lg" 
+                            <Button
+                                size="lg"
                                 fullWidth
                                 className="flex items-center justify-center gap-2 neon-flicker-random"
                             >
                                 <Mail className="w-5 h-5"/> Send Email
                             </Button>
                         </a>
-                        <a 
-                            href="https://github.com/Klirk" 
-                            target="_blank" 
+                        <a
+                            href="https://github.com/Klirk"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block w-full"
                         >
-                            <Button 
-                                variant="outline" 
-                                size="lg" 
+                            <Button
+                                variant="outline"
+                                size="lg"
                                 fullWidth
                                 className="flex items-center justify-center gap-2 neon-flicker-variant"
                             >
