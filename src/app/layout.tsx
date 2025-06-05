@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {ParticleBackground} from "./ui";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const jetbrainsMono = JetBrains_Mono({
     subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
             {children}
         </main>
         <Footer/>
+        <Analytics/>
         <SpeedInsights/>
         </body>
         </html>
