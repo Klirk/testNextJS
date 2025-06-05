@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="h-full">
-        <SpeedInsights/>
+
         <body
             className={`${jetbrainsMono.className} antialiased flex flex-col h-full m-0 relative`}
         >
@@ -34,6 +34,7 @@ export default function RootLayout({
             {children}
         </main>
         <Footer/>
+        <SpeedInsights/>
         </body>
         </html>
     );
