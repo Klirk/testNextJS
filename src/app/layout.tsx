@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {ParticleBackground} from "./ui";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const jetbrainsMono = JetBrains_Mono({
     subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="h-full">
+        <SpeedInsights/>
         <body
             className={`${jetbrainsMono.className} antialiased flex flex-col h-full m-0 relative`}
         >
