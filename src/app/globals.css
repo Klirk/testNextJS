@@ -3,7 +3,7 @@
 :root {
   --background: #0a0a0a;
   --foreground: #f1f1f1;
-  --neon-red: #ff0033;
+  --neon-red: #ff0000;
   --neon-red-glow: 0 0 10px #ff0033, 0 0 20px #ff0033, 0 0 30px #ff0033;
   --dark-red: #990000;
   --dark-bg: #121212;
@@ -87,4 +87,56 @@ code, pre {
 
 .neon-flicker {
   animation: flicker 4s infinite alternate;
+}
+
+/* Different flicker timings */
+.neon-flicker-fast {
+  animation: flicker 2s infinite alternate;
+}
+
+.neon-flicker-slow {
+  animation: flicker 6s infinite alternate;
+}
+
+.neon-flicker-random {
+  animation: flicker 3.5s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes flicker-variant {
+  0%, 29.999%, 31%, 68.999%, 71%, 72.999%, 80%, 100% {
+    opacity: 1;
+  }
+  30%, 30.999%, 69%, 70.999%, 73%, 79.999% {
+    opacity: 0.7;
+  }
+}
+
+.neon-flicker-variant {
+  animation: flicker-variant 5s infinite alternate;
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #ff0707;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff0707
+  }
 }
