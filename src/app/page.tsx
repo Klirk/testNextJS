@@ -17,7 +17,6 @@ import {
     Layers,
     Github,
     Mail,
-    Linkedin,
     Download,
     ExternalLink,
     Terminal,
@@ -60,10 +59,12 @@ export default function Home() {
                         Specializing in modern JavaScript frameworks and responsive design.
                     </Text>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <Button size="lg" className="flex items-center gap-2">
-                            <Mail className="w-5 h-5"/>
-                            Contact Me
-                        </Button>
+                        <a href="#contact" className="inline-block">
+                            <Button size="lg" className="flex items-center gap-2">
+                                <Mail className="w-5 h-5"/>
+                                Contact Me
+                            </Button>
+                        </a>
                         <Button variant="outline" size="lg" className="flex items-center gap-2">
                             <Download className="w-5 h-5"/>
                             Download Resume
@@ -278,14 +279,33 @@ export default function Home() {
                         Feel free to reach out if you have a project in mind or just want to connect.
                     </Text>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" fullWidth
-                                className="flex items-center justify-center gap-2 neon-flicker-random">
-                            <Mail className="w-5 h-5"/> Send Email
-                        </Button>
-                        <Button variant="outline" size="lg" fullWidth
-                                className="flex items-center justify-center gap-2 neon-flicker-variant">
-                            <Linkedin className="w-5 h-5"/> LinkedIn Profile
-                        </Button>
+                        <a 
+                            href="mailto:klirk.ens@gmail.com" 
+                            className="inline-block w-full"
+                        >
+                            <Button 
+                                size="lg" 
+                                fullWidth
+                                className="flex items-center justify-center gap-2 neon-flicker-random"
+                            >
+                                <Mail className="w-5 h-5"/> Send Email
+                            </Button>
+                        </a>
+                        <a 
+                            href="https://github.com/Klirk" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-block w-full"
+                        >
+                            <Button 
+                                variant="outline" 
+                                size="lg" 
+                                fullWidth
+                                className="flex items-center justify-center gap-2 neon-flicker-variant"
+                            >
+                                <Github className="w-5 h-5"/> GitHub
+                            </Button>
+                        </a>
                     </div>
                 </div>
             </Section>
