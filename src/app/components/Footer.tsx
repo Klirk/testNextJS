@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center">
           <div className="text-sm">
-            © {new Date().getFullYear()} My Website <span className="text-red-500">|</span> <span className="neon-red-text">Portfolio</span>
+            © {new Date().getFullYear()} KLIRK <span className="text-red-500">|</span> <span className="neon-red-text">Portfolio</span>
           </div>
         </div>
       </div>

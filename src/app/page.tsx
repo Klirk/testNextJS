@@ -17,7 +17,7 @@ export default function Home() {
     <div className="min-h-full bg-transparent">
       {/* Hero Section */}
       <Section 
-        className="bg-black/70 py-20 border-b border-red-800"
+        className="min-h-screen flex items-center bg-black/70 py-20 border-b border-red-800"
         id="home"
       >
         <div className="flex flex-col items-center">
@@ -49,7 +49,7 @@ export default function Home() {
       <Section 
         title="Skills & Technologies" 
         subtitle="Technologies I work with" 
-        className="border-b border-red-800 bg-black/60"
+        className="min-h-screen flex items-center border-b border-red-800 bg-black/60"
         id="skills"
       >
         <div className="flex flex-wrap gap-2 justify-center max-w-3xl mx-auto mb-12">
@@ -67,7 +67,7 @@ export default function Home() {
       <Section 
         title="Projects" 
         subtitle="Some of my recent work"
-        className="border-b border-red-800 bg-black/70"
+        className="min-h-screen flex items-center border-b border-red-800 bg-black/70"
         id="projects"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -137,7 +137,7 @@ export default function Home() {
       <Section
         title="Get in Touch"
         subtitle="Interested in working together? Let's connect!"
-        className="bg-black/60"
+        className="min-h-screen flex items-center bg-black/60"
         id="contact"
       >
         <div className="max-w-md mx-auto text-center">
